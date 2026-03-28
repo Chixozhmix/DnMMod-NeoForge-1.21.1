@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "dnmmod:item/magical_grimoire_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "dnmmod:item/magical_grimoire_gui"
+    }
+  }
+}

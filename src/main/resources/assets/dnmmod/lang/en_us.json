@@ -1,0 +1,255 @@
+{
+  "item.dnmmod.iron_dagger": "Iron dagger",
+  "item.dnmmod.iron_spear": "Iron spear",
+  "item.dnmmod.iron_greataxe": "Iron greataxe",
+  "item.dnmmod.iron_halberd": "Iron halberd",
+  "item.dnmmod.iron_battleaxe": "Iron battleaxe",
+  "item.dnmmod.iron_greatsword": "Iron greatsword",
+  "item.dnmmod.iron_mace": "Iron mace",
+  "item.dnmmod.iron_scimitar": "Iron scimitar",
+  "item.dnmmod.iron_glaive": "Iron glaive",
+  "item.dnmmod.iron_klevets": "Iron klevets",
+  "item.dnmmod.iron_sickle": "Iron sikle",
+  "item.dnmmod.iron_trident": "Iron trident",
+  "item.dnmmod.iron_katana": "Iron katana",
+  "item.dnmmod.diamond_dagger": "Diamond dagger",
+  "item.dnmmod.diamond_spear": "Diamond spear",
+  "item.dnmmod.diamond_greataxe": "Diamond greataxe",
+  "item.dnmmod.diamond_halberd": "Diamond halberd",
+  "item.dnmmod.diamond_battleaxe": "Diamond battleaxe",
+  "item.dnmmod.diamond_greatsword": "Diamond greatsword",
+  "item.dnmmod.diamond_mace": "Diamond mace",
+  "item.dnmmod.diamond_scimitar": "Diamond scimitar",
+  "item.dnmmod.diamond_glaive": "Diamond glaive",
+  "item.dnmmod.diamond_klevets": "Diamond klevets",
+  "item.dnmmod.diamond_sickle": "Diamond sikle",
+  "item.dnmmod.diamond_trident": "Diamond trident",
+  "item.dnmmod.diamond_katana": "Diamond katana",
+  "item.dnmmod.ritual_dagger": "Ritual dagger",
+  "item.dnmmod.bladesinger_sword": "Bladesinger sword",
+
+  "item.dnmmod.hag_eye": "Hag Eye",
+  "item.dnmmod.forest_heart": "Forest Heart",
+  "item.dnmmod.wand_core": "Wand core",
+  "item.dnmmod.cryomancer_wand_core": "Cryomancer wand core",
+  "item.dnmmod.electromancer_wand_core": "Electromancer wand core",
+  "item.dnmmod.druid_wand_core": "Druid wand core",
+  "item.dnmmod.evoker_wand_core": "Evoker wand core",
+  "item.dnmmod.pyromancer_wand_core": "Pyromancer wand core",
+  "item.dnmmod.blood_wand_core": "Blood wand core",
+  "item.dnmmod.ender_wand_core": "Ender wand core",
+  "item.dnmmod.thunderstorm_bottle": "Thunderstorm bottle",
+  "item.dnmmod.greemon_fang": "Greemon fang",
+
+  "item.dnmmod.wooden_wand": "Wooden wand",
+  "item.dnmmod.cryomancer_wand": "Cryomancer wand",
+  "item.dnmmod.electromancer_wand": "Electromancer wand",
+  "item.dnmmod.druid_wand": "Druid wand",
+  "item.dnmmod.evoker_wand": "Evoker wand",
+  "item.dnmmod.pyromancer_wand": "Pyromancer wand",
+  "item.dnmmod.blood_wand": "Blood wand",
+  "item.dnmmod.ender_wand": "Ender wand",
+  "item.dnmmod.sacred_symbol": "Sacred wand",
+
+  "item.dnmmod.magical_grimoire": "Magical grimoire",
+
+  "item.dnmmod.component_bag": "Component bag",
+  "item.dnmmod.medium_component_bag": "Medium component bag",
+
+  "item.dnmmod.raven_spawn_egg": "Raven spawn egg",
+  "item.dnmmod.undead_spirit_spawn_egg": "Undead Spirit spawn egg",
+  "item.dnmmod.ghost_spawn_egg": "Ghost spawn egg",
+  "item.dnmmod.goblin_shaman_spawn_egg": "Goblin shaman spawn egg",
+  "item.dnmmod.goblin_warrior_spawn_egg": "Goblin warrior spawn egg",
+  "item.dnmmod.greemon_spawn_egg": "Greemon spawn egg",
+  "item.dnmmod.green_hag_spawn_egg": "Green hag spawn egg",
+  "item.dnmmod.leshy_spawn_egg": "Leshy spawn egg",
+
+  "item.dnmmod.raven_feather": "Raven Feather",
+  "item.dnmmod.burnt_sugar": "Burnt sugar",
+  "item.dnmmod.mirror": "Mirror",
+  "item.dnmmod.d20": "D20",
+  "item.dnmmod.blade_rune": "Blade rune",
+  "item.dnmmod.key": "Key",
+  "item.dnmmod.iron_ring": "Iron ring",
+
+  "item.dnmmod.ectoplasm": "Ectoplasm",
+  "item.dnmmod.phantom_potion": "Phantom potion",
+
+  "item.dnmmod.maid_dress": "Maid dress",
+  "item.dnmmod.maid_cap": "Maid cap",
+
+  "item.dnmmod.archer_armor_helmet": "Archer helmet",
+  "item.dnmmod.archer_armor_chestplate": "Archer chestplate",
+  "item.dnmmod.archer_armor_leggings": "Archer leggings",
+  "item.dnmmod.archer_armor_boots": "Archer boots",
+
+  "item.dnmmod.improved_archer_helmet": "Improved archer helmet",
+  "item.dnmmod.improved_archer_chestplate": "Improved archer chestplate",
+  "item.dnmmod.improved_archer_leggings": "Improved archer leggings",
+  "item.dnmmod.improved_archer_boots": "Improved archer boots",
+
+  "item.dnmmod.shadow_archer_helmet": "Shadow archer helmet",
+  "item.dnmmod.shadow_archer_chestplate": "Shadow archer chestplate",
+  "item.dnmmod.shadow_archer_leggings": "Shadow archer leggings",
+  "item.dnmmod.shadow_archer_boots": "Shadow archer boots",
+
+  "item.dnmmod.bladesinger_helmet": "Bladesinger helmet",
+  "item.dnmmod.bladesinger_chestplate": "Bladesinger chestplate",
+  "item.dnmmod.bladesinger_leggings": "Bladesinger leggings",
+  "item.dnmmod.bladesinger_boots": "Bladesinger boots",
+
+  "item.dnmmod.mithril_helmet": "Mithril helmet",
+  "item.dnmmod.mithril_chestplate": "Mithril chestplate",
+  "item.dnmmod.mithril_leggings": "Mithril leggings",
+  "item.dnmmod.mithril_boots": "Mithril boots",
+
+  "item.dnmmod.plate_helmet": "Plate helmet",
+  "item.dnmmod.plate_chestplate": "Plate chestplate",
+  "item.dnmmod.plate_leggings": "Plate leggings",
+  "item.dnmmod.plate_boots": "Plate boots",
+
+  "item.dnmmod.protection_ring": "Protection ring",
+
+  "item.minecraft.potion.effect.corpse_poison": "Corpse poison",
+  "item.minecraft.splash_potion.effect.corpse_poison": "Splash corpse poison",
+  "item.minecraft.lingering_potion.effect.corpse_poison": "Lingering corpse poison",
+
+  "block.dnmmod.leshy_altar": "Leshy Altar",
+
+  "entity.dnmmod.cloud_dagger": "Magic Dagger",
+  "entity.dnmmod.ice_dagger": "Ice dagger",
+  "entity.dnmmod.chromatic_orb": "Chromatic orb",
+  "entity.dnmmod.acid_projectile": "Acid projectile",
+  "entity.dnmmod.ray_of_enfeeblement": "Ray of enfeeblement",
+
+  "death.attack.dnmmod.ice_dagger": "%1$s was pierced by ice",
+  "death.attack.dnmmod.cloud_dagger": "%1$s was cut to pieces",
+  "death.attack.dnmmod.chromatic_orb": "%1$s was torn to pieces",
+  "death.attack.dnmmod.acid_projectile": "%1$s was dissolved alive",
+  "death.attack.dnmmod.caustic_brew": "%1$s has been corroded",
+  "death.attack.dnmmod.summon_ravens": "%1$s had their eyes pecked out",
+  "death.attack.dnmmod.ray_of_enfeeblement": "%1$s was too weak",
+
+  "entity.dnmmod.undead_spirit": "Undead Spirit",
+  "entity.dnmmod.summoned_undead_spirit": "Undead Spirit",
+  "entity.dnmmod.goblin_shaman": "Goblin Shaman",
+  "entity.dnmmod.green_hag": "Green Hag",
+  "entity.dnmmod.raven": "Raven",
+  "entity.dnmmod.summon_raven": "Summon raven",
+  "entity.dnmmod.leshy": "Leshy",
+  "entity.dnmmod.ghost": "Ghost",
+  "entity.dnmmod.greemon": "Greemon",
+  "entity.dnmmod.goblin_warrior": "Goblin warrior",
+  "entity.dnmmod.flame_atronach": "Flame atronach",
+  "entity.dnmmod.storm_atronach": "Storm atronach",
+
+  "tooltip.dnmmod.maid": "Why not?",
+  "tooltip.dnmmod.dragon_priest_mask": "From this mask comes an ancient power and a whisper in an unknown language.",
+
+  "tooltip.dnmmod.hag_eye": "The Hag Coven often creates similar trinkets from those they once ate. A simple magical trinket that hides pleasant bonuses. They say it helps you see in the dark, and you can also use it to spot even those who are outside the walls!",
+  "tooltip.dnmmod.wand_core": "In order for the wand to have magical properties, it needs to be powered. The core of the wand is made from various magical components that grant magical properties to the wand created by the caster.",
+  "tooltip.dnmmod.forest_heart": "By killing a Leshy, which happens to a very small number of mortals, the killer can get a truly valuable thing - the Forest Heart, which has amazing properties to control plants and protect the lives of those who touch the ground.",
+
+  "ui.dnmmod.bounces": "Bounces: %d",
+  "ui.dnmmod.spell_component": "Spell component: %s",
+  "ui.dnmmod.damage_min_health": "Damage to a creature with less than maximum health: %s",
+
+  "ui.dnmmod.green_hag_bossbar": "Green Hag",
+  "ui.dnmmod.leshy_bossbar": "Leshy",
+
+  "ui.dnmmod.component_loss": "No components",
+
+  "ui.dnmmod.max_mirror_massage": "You look great.",
+  "ui.dnmmod.half_mirror_massage": "I've been better",
+  "ui.dnmmod.min_mirror_massage": "You look bad :(",
+
+  "ui.dnmmod.knock.all_blocked": "§4All locks are magically protected!",
+  "ui.dnmmod.knock.complexity_blocked": "§c%d lock(s) protected by magical enchantments!",
+  "ui.dnmmod.knock.opened": "§aSuccessfully opened %d lock(s)",
+
+  "creativetab.dnmmod.weapons": "Weapons",
+  "creativetab.dnmmod.armor": "Armor",
+  "creativetab.dnmmod.staffs": "Staffs and wands",
+  "creativetab.dnmmod.items": "Items",
+  "creativetab.dnmmod.blocks": "Blocks",
+  "creativetab.dnmmod.magic_items": "Magic items",
+  "creativetab.dnmmod.eggs": "Eggs",
+
+  "effect.dnmmod.mage_armor": "Mage Armor",
+  "effect.dnmmod.acid_effect": "Acid",
+  "effect.dnmmod.phantom_effect": "Phantom",
+  "effect.dnmmod.shrink_effect": "Shrink",
+  "effect.dnmmod.agathys_armor": "Agathys Armor",
+  "effect.dnmmod.thick_of_fight": "Thick of fight",
+  "effect.dnmmod.corpse_poison": "Corpse poison",
+
+  "sounds.dnmmod.ghost_ambient": "Ghost",
+  "sounds.dnmmod.undead_spirit": "Undead Spirit",
+  "sounds.dnmmod.raven": "Raven",
+  "sounds.dnmmod.goblin": "Goblin",
+  "sounds.dnmmod.greemon": "Greemon",
+  "sounds.dnmmod.leshy": "Leshy",
+
+  "school.dnmmod.necro": "Necromancy",
+
+  "attribute.dnmmod.necro_magic_resist": "Necromancy resist",
+  "attribute.dnmmod.necro_spell_power": "Necromancy spell power",
+
+  "spell.dnmmod.mage_armor": "Mage Armor",
+  "spell.dnmmod.mage_armor.guide": "You surround yourself with a web of magic, forming a shield. Your armor rating increases.",
+
+  "spell.dnmmod.night_vision": "Night Vision",
+  "spell.dnmmod.night_vision.guide": "You enhance your vision, allowing you to see in the dark.",
+
+  "spell.dnmmod.cloud_daggers": "Cloud of Daggers",
+  "spell.dnmmod.cloud_daggers.guide": "You summon a cloud of spinning daggers that slice enemies apart.",
+
+  "spell.dnmmod.ice_dagger": "Ice Dagger",
+  "spell.dnmmod.ice_dagger.guide": "You create an ice dagger that explodes and deals damage to the target and everyone nearby.",
+
+  "spell.dnmmod.thunderwave": "Thunderwave",
+  "spell.dnmmod.thunderwave.guide": "You emit a wave of deafening thunder that repels the enemies around you.",
+
+  "spell.dnmmod.purity": "Purity",
+  "spell.dnmmod.purity.guide": "You remove all negative effects from yourself.",
+
+  "spell.dnmmod.caustic_brew": "Caustic Brew",
+  "spell.dnmmod.caustic_brew.guide": "You emit a stream of acid along the line of your gaze, dealing damage to all creatures in your path. The acid corrodes creatures, dealing damage to them for a short time.",
+
+  "spell.dnmmod.chromatic_orb": "Chromatic Orb",
+  "spell.dnmmod.chromatic_orb.guide": "You release a ball of concentrated magical energy that hits the enemy and the creatures closest to it.",
+
+  "spell.dnmmod.summon_undead_spirit": "Summon Undead Spirit",
+  "spell.dnmmod.summon_undead_spirit.guide": "You summon the spirit of a powerful undead that protects you from your enemies.",
+
+  "spell.dnmmod.summon_ravens": "Summon Ravens",
+  "spell.dnmmod.summon_ravens.guide": "You summon a flock of crows that protect you from your enemies.",
+
+  "spell.dnmmod.shrinking": "Shrinking",
+  "spell.dnmmod.shrinking.guide": "You are shrinking your body.",
+
+  "spell.dnmmod.agathys_armor_spell": "Agathys Armor",
+  "spell.dnmmod.agathys_armor_spell.guide": "You surround yourself with cold armor that protects you and damages anyone who dares to touch you.",
+
+  "spell.dnmmod.thick_of_fight": "Thick of Fight",
+  "spell.dnmmod.thick_of_fight.guide": "You are filled with the fury of battle, strengthening your body.",
+
+  "spell.dnmmod.knock": "Knock",
+  "spell.dnmmod.knock.guide": "Opens locks.",
+
+  "spell.dnmmod.ray_of_enfeeblement": "Ray of enfeeblement",
+  "spell.dnmmod.ray_of_enfeeblement.guide": "A beam of exhausting energy flies from you to the creature, causing it to lose its strength.",
+
+  "spell.dnmmod.summon_flame_atronach": "Summon flame atronach",
+  "spell.dnmmod.summon_flame_atronach.guide": "From the depths of Nether, you summon the spirit of fire to protect you",
+
+  "spell.dnmmod.contagion": "Contagion",
+  "spell.dnmmod.contagion.guide": "You choose a creature, infecting it and everyone around it with a deadly disease.",
+
+  "spell.dnmmod.summon_storm_atronach": "Summon storm atronach",
+  "spell.dnmmod.summon_storm_atronach.guide": "You call upon the forces of thunder to create a powerful Atronach.",
+
+  "spell.dnmmod.tall_the_dead": "Tall the dead",
+  "spell.dnmmod.tall_the_dead.guide": "Choose a target that will hear the funeral bells ringing in their souls."
+}

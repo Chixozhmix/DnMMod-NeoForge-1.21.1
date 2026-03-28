@@ -7,9 +7,9 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
-@Mod(value = MainDnM.MOD_ID, dist = Dist.CLIENT)
+@Mod(value = DnMMod.MOD_ID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = MainDnM.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = DnMMod.MOD_ID, value = Dist.CLIENT)
 public class DnMModClient {
     public DnMModClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.

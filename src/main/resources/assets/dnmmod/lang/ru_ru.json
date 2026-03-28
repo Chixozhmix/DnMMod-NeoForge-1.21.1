@@ -1,0 +1,258 @@
+{
+  "item.dnmmod.iron_dagger": "Железный кинжал",
+  "item.dnmmod.iron_spear": "Железное копье",
+  "item.dnmmod.iron_greataxe": "Железная секира",
+  "item.dnmmod.iron_halberd": "Железная алебарда",
+  "item.dnmmod.iron_battleaxe": "Железный боевой топор",
+  "item.dnmmod.iron_greatsword": "Жлезный двуручный меч",
+  "item.dnmmod.iron_mace": "Железная булава",
+  "item.dnmmod.iron_scimitar": "Железный скимитар",
+  "item.dnmmod.iron_glaive": "Железная глефа",
+  "item.dnmmod.iron_klevets": "Железный клевец",
+  "item.dnmmod.iron_sickle": "Железный серп",
+  "item.dnmmod.iron_trident": "Железный трезубец",
+  "item.dnmmod.iron_katana": "Железная катана",
+  "item.dnmmod.diamond_dagger": "Алмазный кинжал",
+  "item.dnmmod.diamond_spear": "Алмазное копье",
+  "item.dnmmod.diamond_greataxe": "Алмазная секира",
+  "item.dnmmod.diamond_halberd": "Алмазная алебарда",
+  "item.dnmmod.diamond_battleaxe": "Алмазный боевой топор",
+  "item.dnmmod.diamond_greatsword": "Алмазный двуручный меч",
+  "item.dnmmod.diamond_mace": "Алмазная булава",
+  "item.dnmmod.diamond_scimitar": "Алмазный скимитар",
+  "item.dnmmod.diamond_glaive": "Алмазная глефа",
+  "item.dnmmod.diamond_klevets": "Алмазный клевец",
+  "item.dnmmod.diamond_sickle": "Алмазный серп",
+  "item.dnmmod.diamond_trident": "Алмазный трезубец",
+  "item.dnmmod.diamond_katana": "Алмазная катана",
+  "item.dnmmod.ritual_dagger": "Ритуальный кинжал",
+  "item.dnmmod.bladesinger_sword": "Меч Певца Клинков",
+
+
+  "item.dnmmod.hag_eye": "Глаз Карги",
+  "item.dnmmod.forest_heart": "Сердце Леса",
+  "item.dnmmod.wand_core": "Сердцевина палочки",
+  "item.dnmmod.cryomancer_wand_core": "Сердцевина палочки криоманта",
+  "item.dnmmod.electromancer_wand_core": "Сердцевина палочки электроманта",
+  "item.dnmmod.druid_wand_core": "Сердцевина палочки друида",
+  "item.dnmmod.evoker_wand_core": "Сердцевина палочки призывателя",
+  "item.dnmmod.pyromancer_wand_core": "Сердцевина палочки пироманта",
+  "item.dnmmod.blood_wand_core": "Сердцевина кровавой палочки",
+  "item.dnmmod.ender_wand_core": "Сердцевина палочки эндера",
+  "item.dnmmod.thunderstorm_bottle": "Гроза в бутылке",
+  "item.dnmmod.greemon_fang": "Клык гримона",
+
+  "item.dnmmod.wooden_wand": "Деревянная палочка",
+  "item.dnmmod.cryomancer_wand": "Палочка криоманта",
+  "item.dnmmod.electromancer_wand": "Палочка электроманта",
+  "item.dnmmod.druid_wand": "Палочка друида",
+  "item.dnmmod.evoker_wand": "Палочка призывателя",
+  "item.dnmmod.pyromancer_wand": "Палочка пироманта",
+  "item.dnmmod.blood_wand": "Кровавая палочка",
+  "item.dnmmod.ender_wand": "Палочка эндера",
+  "item.dnmmod.sacred_symbol": "Священный символ",
+
+  "item.dnmmod.magical_grimoire": "Магический гримуар",
+
+  "item.dnmmod.component_bag": "Сумка с компонентами",
+  "item.dnmmod.medium_component_bag": "Средняя сумка с компонентами",
+
+  "item.dnmmod.raven_spawn_egg": "Яйцо призыва ворона",
+  "item.dnmmod.undead_spirit_spawn_egg": "Яйцо призыва Духа Нежити",
+  "item.dnmmod.ghost_spawn_egg": "Яйцо призыва призрака",
+  "item.dnmmod.goblin_shaman_spawn_egg": "Яйцо призыва гоблина шамана",
+  "item.dnmmod.goblin_warrior_spawn_egg": "Яйцо призыва гоблина воина",
+  "item.dnmmod.greemon_spawn_egg": "Яйцо призыва гримона",
+  "item.dnmmod.green_hag_spawn_egg": "Яйцо призыва зеленой карги",
+  "item.dnmmod.leshy_spawn_egg": "Яйцо призыва Лешего",
+
+  "item.dnmmod.raven_feather": "Перо ворона",
+  "item.dnmmod.burnt_sugar": "Жженный сахар",
+  "item.dnmmod.mirror": "Зеркало",
+  "item.dnmmod.d20": "D20",
+  "item.dnmmod.blade_rune": "Руна клинка",
+  "item.dnmmod.key": "Ключ",
+  "item.dnmmod.iron_ring": "Железное колечко",
+
+  "item.dnmmod.ectoplasm": "Эктоплазма",
+  "item.dnmmod.phantom_potion": "Зелье фантома",
+
+  "item.dnmmod.maid_dress": "Платье горничной",
+  "item.dnmmod.maid_cap": "Шапочка горничной",
+
+  "item.dnmmod.archer_armor_helmet": "Капюшон лучника",
+  "item.dnmmod.archer_armor_chestplate": "Нагрудник лучника",
+  "item.dnmmod.archer_armor_leggings": "Поножи лучника",
+  "item.dnmmod.archer_armor_boots": "Ботинки лучника",
+
+  "item.dnmmod.improved_archer_helmet": "Улучшенный капюшон лучника",
+  "item.dnmmod.improved_archer_chestplate": "Улучшенный нагрудник лучника",
+  "item.dnmmod.improved_archer_leggings": "Улучшенные поножи лучника",
+  "item.dnmmod.improved_archer_boots": "Улучшенные ботинки лучника",
+
+  "item.dnmmod.shadow_archer_helmet": "Шлем теневого лучника",
+  "item.dnmmod.shadow_archer_chestplate": "Нагрудник теневого лучника",
+  "item.dnmmod.shadow_archer_leggings": "Поножи теневого лучника",
+  "item.dnmmod.shadow_archer_boots": "Ботинки теневого лучника",
+
+  "item.dnmmod.bladesinger_helmet": "Шлем Певца клинков",
+  "item.dnmmod.bladesinger_chestplate": "Нагрудник Певца клинков",
+  "item.dnmmod.bladesinger_leggings": "Поножи Певца клинков",
+  "item.dnmmod.bladesinger_boots": "Ботинки Певца клинков",
+
+  "item.dnmmod.mithrill_helmet": "Мифриловый шлем",
+  "item.dnmmod.mithrill_chestplate": "Мифриловый нагрудник",
+  "item.dnmmod.mithrill_leggings": "Мифриловые поножи",
+  "item.dnmmod.mithrill_boots": "Мифриловые ботинки",
+
+  "item.dnmmod.plate_helmet": "Латный шлем",
+  "item.dnmmod.plate_chestplate": "Латный нагрудник",
+  "item.dnmmod.plate_leggings": "Латные поножи",
+  "item.dnmmod.plate_boots": "Латные ботинки",
+
+  "item.dnmmod.protection_ring": "Кольцо защиты",
+
+  "item.minecraft.potion.effect.corpse_poison": "Трупный яд",
+  "item.minecraft.splash_potion.effect.corpse_poison": "Взрывной трупный яд",
+  "item.minecraft.lingering_potion.effect.corpse_poison": "Оседающий трупный яд",
+
+  "block.dnmmod.clay_shale": "Глинистый сланец",
+  "block.dnmmod.coke_oven": "Коксовая печь",
+  "block.dnmmod.leshy_altar": "Алтарь Лешего",
+
+  "entity.dnmmod.cloud_dagger": "Магический кинжал",
+  "entity.dnmmod.ice_dagger": "Ледяной кинжал",
+  "entity.dnmmod.chromatic_orb": "Хроматический шар",
+  "entity.dnmmod.acid_projectile": "Кислотный снаряд",
+  "entity.dnmmod.ray_of_enfeeblement": "Луч слабости",
+
+  "death.attack.dnmmod.ice_dagger": "%1$s был проткнут льдом",
+  "death.attack.dnmmod.cloud_dagger": "%1$s был изрезан на куски",
+  "death.attack.dnmmod.chromatic_orb": "%1$s был разорван на куски",
+  "death.attack.dnmmod.acid_projectile": "%1$s был растворен заживо",
+  "death.attack.dnmmod.caustic_brew": "%1$s был разъеден",
+  "death.attack.dnmmod.summon_ravens": "%1$s были выклеваны глаза",
+  "death.attack.dnmmod.ray_of_enfeeblement": "%1$s оказался слишком слаб",
+
+  "entity.dnmmod.undead_spirit": "Дух Нежити",
+  "entity.dnmmod.summoned_undead_spirit": "Дух Нежити",
+  "entity.dnmmod.goblin_shaman": "Шаман гоблинов",
+  "entity.dnmmod.green_hag": "Зеленая Карга",
+  "entity.dnmmod.raven": "Ворон",
+  "entity.dnmmod.summon_raven": "Призванный ворон",
+  "entity.dnmmod.leshy": "Леший",
+  "entity.dnmmod.ghost": "Призрак",
+  "entity.dnmmod.greemon": "Гримон",
+  "entity.dnmmod.goblin_warrior": "Гобилн воин",
+  "entity.dnmmod.flame_atronach": "Огненный атронах",
+  "entity.dnmmod.storm_atronach": "Грозовой атронах",
+
+  "tooltip.dnmmod.maid": "Почему нет?",
+  "tooltip.dnmmod.dragon_priest_mask": "От этой маски исходит древняя сила и шепет на неизвестном языке.",
+
+  "tooltip.dnmmod.hag_eye": "Шабаш карг часто создает подобные безделушки из тех, кого когда-то они употребили в пищу. Простая магическая безделушка, скрывающая в себе приятные бонусы. Говорят, она помогает видеть в темноте, а еще с ее помощью можно заметить даже тех, кто находится за стенами!",
+  "tooltip.dnmmod.wand_core": "Чтобы волшебная палочка обладала магическими свойствами, она должна быть заряжена энергией. Ядро палочки состоит из различных магических компонентов, которые придают волшебные свойства палочке, созданной заклинателем.",
+  "tooltip.dnmmod.forest_heart": "Убив лешего, что получается у очень малого количества смертных, убийца может получить по-настоящему ценную вещь - Сердце Лешего, обладающее удивительными свойствами управлять растениями и защищать жизнь тех, кто прикасается к земле.",
+
+  "ui.dnmmod.bounces": "Отскакиваний: %d",
+  "ui.dnmmod.spell_component": "Компонент заклинания: %s",
+  "ui.dnmmod.damage_min_health": "Урон по существам, чье здоровье меньше максимума: %s",
+
+  "ui.dnmmod.green_hag_bossbar": "Зеленая Карга",
+  "ui.dnmmod.leshy_bossbar": "Леший",
+
+  "ui.dnmmod.component_loss": "Нет компонентов",
+
+  "ui.dnmmod.max_mirror_massage": "Вы выглядите прекрасно.",
+  "ui.dnmmod.half_mirror_massage": "Вы выглядели и лучше.",
+  "ui.dnmmod.min_mirror_massage": "Вы выглядите плохо :(",
+
+  "ui.dnmmod.knock.all_blocked": "§4Все замки защищены!",
+  "ui.dnmmod.knock.complexity_blocked": "§c%d замка(ов) защищено!",
+  "ui.dnmmod.knock.opened": "§aУспешно открыто %d замка(ов)",
+
+  "creativetab.dnmmod.weapons": "Оружие",
+  "creativetab.dnmmod.armor": "Броня",
+  "creativetab.dnmmod.staffs": "Посохи и палочки",
+  "creativetab.dnmmod.items": "Предметы",
+  "creativetab.dnmmod.blocks": "Блоки",
+  "creativetab.dnmmod.magic_items": "Магические предметы",
+  "creativetab.dnmmod.eggs": "Яйца",
+
+  "effect.dnmmod.mage_armor": "Доспехи Мага",
+  "effect.dnmmod.acid_effect": "Кислота",
+  "effect.dnmmod.phantom_effect": "Фантом",
+  "effect.dnmmod.shrink_effect": "Уменьшение",
+  "effect.dnmmod.agathys_armor": "Доспех Агатиса",
+  "effect.dnmmod.thick_of_fight": "Гуща битвы",
+  "effect.dnmmod.corpse_poison": "Трупный яд",
+
+  "sounds.dnmmod.ghost_ambient": "Призрак",
+  "sounds.dnmmod.undead_spirit": "Дух Нежити",
+  "sounds.dnmmod.raven": "Ворон",
+  "sounds.dnmmod.goblin": "Гоблин",
+  "sounds.dnmmod.greemon": "Гримон",
+  "sounds.dnmmod.leshy": "Леший",
+
+  "school.dnmmod.necro": "Некромантия",
+
+  "attribute.dnmmod.necro_magic_resist": "Сопротивление магии некромантии",
+  "attribute.dnmmod.necro_spell_power": "Сила заклинаний некромантии",
+
+  "spell.dnmmod.mage_armor": "Доспехи Мага",
+  "spell.dnmmod.mage_armor.guide": "Вы окружаете себя плетением магии, образуя защиту. Ваш показатель брони увеличивается.",
+
+  "spell.dnmmod.night_vision": "Ночное зрение",
+  "spell.dnmmod.night_vision.guide": "Вы усиливаете свое зрение, что позволяет вам видеть в темноте.",
+
+  "spell.dnmmod.cloud_daggers": "Облако Кинжалов",
+  "spell.dnmmod.cloud_daggers.guide": "Вы призываете облако вращающихся кинжалов, которые кромсают врагов на части.",
+
+  "spell.dnmmod.ice_dagger": "Ледяной Кинжал",
+  "spell.dnmmod.ice_dagger.guide": "Вы создаете кинжал из льда, который взрывается и наносит урон цели и всем рядом.",
+
+  "spell.dnmmod.thunderwave": "Волна грома",
+  "spell.dnmmod.thunderwave.guide": "Вы испускаете из себя волну оглушительного грома, которая отталкивает врагов вокруг.",
+
+  "spell.dnmmod.purity": "Чистота",
+  "spell.dnmmod.purity.guide": "Вы снимаете с себя все негативные эффекты.",
+
+  "spell.dnmmod.caustic_brew": "Едкое Варево",
+  "spell.dnmmod.caustic_brew.guide": "Вы испускаете струю кислоты вдоль линии по направлению своего взгляда, нанося урон всем существам на пути. Кислота разъедает существ, нанося им урон в течение короткого времени.",
+
+  "spell.dnmmod.chromatic_orb": "Хроматический шар",
+  "spell.dnmmod.chromatic_orb.guide": "Вы выпускаете шар сконцентрированной магической энергии, который поражает врага и ближайших к нему существ.",
+
+  "spell.dnmmod.summon_undead_spirit": "Призыв Духа Нежити",
+  "spell.dnmmod.summon_undead_spirit.guide": "Вы вызываете дух могущественной нежити, который защищает вас от врагов.",
+
+  "spell.dnmmod.summon_ravens": "Вызов Воронов",
+  "spell.dnmmod.summon_ravens.guide": "Вы вызываете стаю воронов, которые защищают вас от врагов.",
+
+  "spell.dnmmod.shrinking": "Уменьшение",
+  "spell.dnmmod.shrinking.guide": "Вы уменьшаете свое тело.",
+
+  "spell.dnmmod.agathys_armor_spell": "Доспех Агатиса",
+  "spell.dnmmod.agathys_armor_spell.guide": "Вы окружаете себя холодной броней, которая защищает вас и наносит урон любому, кто осмелится прикоснуться к вам.",
+
+  "spell.dnmmod.thick_of_fight": "Гуща Битвы",
+  "spell.dnmmod.thick_of_fight.guide": "Вы наполняетесь яростью битвы, усиливая свое тело.",
+
+  "spell.dnmmod.knock": "Стук",
+  "spell.dnmmod.knock.guide": "Открывает замки",
+
+  "spell.dnmmod.ray_of_enfeeblement": "Луч слабости",
+  "spell.dnmmod.ray_of_enfeeblement.guide": "Луч изнуряющей энергии летит от вас к существу, заставляя его потерять силы.",
+
+  "spell.dnmmod.summon_flame_atronach": "Вызов огненного атронаха",
+  "spell.dnmmod.summon_flame_atronach.guide": "Из глубин Преисподней вы вызываете дух огня для своей защиты",
+
+  "spell.dnmmod.contagion": "Заражение",
+  "spell.dnmmod.contagion.guide": "Вы выбираете существо, поражая его и всех вокруг него смертельной болезнью.",
+
+  "spell.dnmmod.summon_storm_atronach": "Призыв грозового атронаха",
+  "spell.dnmmod.summon_storm_atronach.guide": "Вы взываете к силам грома, чтобы создать могущетсвенного атронаха.",
+
+  "spell.dnmmod.tall_the_dead": "Погребальный звон",
+  "spell.dnmmod.tall_the_dead.guide": "Выберите цель, которая услышит погребальный звон, пробирающий до самой души."
+}
