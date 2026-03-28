@@ -1,0 +1,66 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:dirt",
+    "minecraft:arrow",
+    "minecraft:diamond",
+    "minecraft:chain",
+    "minecraft:magma_block",
+    "minecraft:pointed_dripstone",
+    "minecraft:raw_iron_block",
+    "minecraft:chest",
+    "minecraft:lodestone",
+    "minecraft:lava_bucket",
+    "minecraft:feather",
+    "minecraft:glass_bottle",
+    "minecraft:cod",
+    "minecraft:lightning_rod",
+    "minecraft:coarse_dirt",
+    "minecraft:blaze_rod",
+    "minecraft:lily_of_the_valley",
+    "minecraft:water_bucket",
+    "minecraft:nautilus_shell",
+    "minecraft:rotten_flesh",
+    "minecraft:jukebox",
+
+    "dnmmod:iron_dagger",
+    "dnmmod:mirror",
+    "dnmmod:burnt_sugar",
+    "dnmmod:iron_trident",
+    "dnmmod:thunderstorm_bottle",
+    "dnmmod:ritual_dagger",
+    "dnmmod:raven_feather",
+
+    "irons_spellbooks:frozen_bone",
+    "irons_spellbooks:lightning_bottle",
+    "irons_spellbooks:heavy_chain_necklace",
+    "irons_spellbooks:heavy_chain_necklace",
+    "irons_spellbooks:energized_core",
+
+    {
+      "id": "alexscaves:uranium_shard",
+      "required": false
+    },
+    {
+      "id": "alexscaves:trilocaris_bucket",
+      "required": false
+    },
+    {
+      "id": "alexscaves:dinosaur_nugget",
+      "required": false
+    },
+    {
+      "id": "alexscaves:sea_glass_shards",
+      "required": false
+    },
+
+    {
+      "id": "cataclysm:cursium_ingot",
+      "required": false
+    },
+    {
+      "id": "cataclysm:koboleton_bone",
+      "required": false
+    }
+  ]
+}

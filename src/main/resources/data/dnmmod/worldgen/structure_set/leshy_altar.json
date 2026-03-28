@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dnmmod:leshy_altar",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1626632425,
+    "spacing": 45,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}

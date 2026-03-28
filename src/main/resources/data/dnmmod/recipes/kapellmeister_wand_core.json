@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dnmmod:wand_core"
+    },
+    {
+      "item": "minecraft:jukebox"
+    }
+  ],
+  "result": {
+    "item": "dnmmod:kapellmeister_wand_core"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "dnmmod:wand_core"
+    },
+    {
+      "item": "alexscaves:pearl"
+    }
+  ],
+  "result": {
+    "item": "dnmmod:aqua_wand_core"
+  },
+  "show_notification": true
+}

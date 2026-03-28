@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dnmmod:shaman_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1621671475,
+    "spacing": 40,
+    "separation": 6,
+    "type": "minecraft:random_spread"
+  }
+}

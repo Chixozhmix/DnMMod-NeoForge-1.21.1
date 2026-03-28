@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "F": {
+      "tag": "forge:feathers"
+    },
+    "G": {
+      "item": "minecraft:green_wool"
+    }
+  },
+  "pattern": [
+    "LGL",
+    "LFL",
+    "   "
+  ],
+  "result": {
+    "item": "dnmmod:archer_armor_helmet"
+  },
+  "show_notification": true
+}

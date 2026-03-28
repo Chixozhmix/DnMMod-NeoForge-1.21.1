@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dnmmod:bald_hill",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 1620621435,
+    "spacing": 40,
+    "separation": 20,
+    "type": "minecraft:random_spread"
+  }
+}
