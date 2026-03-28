@@ -35,32 +35,6 @@
     "irons_spellbooks:lightning_bottle",
     "irons_spellbooks:heavy_chain_necklace",
     "irons_spellbooks:heavy_chain_necklace",
-    "irons_spellbooks:energized_core",
-
-    {
-      "id": "alexscaves:uranium_shard",
-      "required": false
-    },
-    {
-      "id": "alexscaves:trilocaris_bucket",
-      "required": false
-    },
-    {
-      "id": "alexscaves:dinosaur_nugget",
-      "required": false
-    },
-    {
-      "id": "alexscaves:sea_glass_shards",
-      "required": false
-    },
-
-    {
-      "id": "cataclysm:cursium_ingot",
-      "required": false
-    },
-    {
-      "id": "cataclysm:koboleton_bone",
-      "required": false
-    }
+    "irons_spellbooks:energized_core"
   ]
 }
