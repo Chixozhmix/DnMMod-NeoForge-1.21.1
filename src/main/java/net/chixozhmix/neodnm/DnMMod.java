@@ -1,5 +1,8 @@
 package net.chixozhmix.neodnm;
 
+import net.chixozhmix.neodnm.items.CreativeModTab;
+import net.chixozhmix.neodnm.registers.BlockRegister;
+import net.chixozhmix.neodnm.registers.ModEntityType;
 import net.chixozhmix.neodnm.registers.ModItems;
 import net.chixozhmix.neodnm.registers.RegistrySpells;
 import org.slf4j.Logger;
@@ -28,8 +31,12 @@ public class DnMMod {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        CreativeModTab.register(modEventBus);
+
         ModItems.register(modEventBus);
+        BlockRegister.register(modEventBus);
         RegistrySpells.register(modEventBus);
+        ModEntityType.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

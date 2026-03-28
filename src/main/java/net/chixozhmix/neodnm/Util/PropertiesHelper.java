@@ -1,7 +1,11 @@
 package net.chixozhmix.neodnm.Util;
 
 
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.registries.DeferredItem;
+
+import java.util.Optional;
 
 
 public class PropertiesHelper {
@@ -19,12 +23,12 @@ public class PropertiesHelper {
                 .stacksTo(size);
     }
 
-//    public static void addOptionalItem(CreativeModeTab.Output output,
-//                                       Optional<RegistryObject<Item>> optionalItem) {
-//        optionalItem.ifPresent(regObj -> {
-//            if (regObj.isPresent()) {
-//                output.accept(regObj.get());
-//            }
-//        });
-//    }
+    public static void addOptionalItem(CreativeModeTab.Output output,
+                                       Optional<DeferredItem<Item>> optionalItem) {
+        optionalItem.ifPresent(regObj -> {
+            if (regObj.get() != null) {
+                output.accept(regObj.get());
+            }
+        });
+    }
 }

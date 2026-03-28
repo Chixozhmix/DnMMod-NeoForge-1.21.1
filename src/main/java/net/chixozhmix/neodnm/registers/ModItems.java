@@ -8,6 +8,7 @@ import net.chixozhmix.neodnm.items.custom.*;
 import net.chixozhmix.neodnm.items.weapons.WandTier;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -98,7 +99,7 @@ public class ModItems {
             () -> new StaffItem(PropertiesHelper.stackItemProperties(1).attributes(ExtendedSwordItem.createAttributes(WandTier.PYROMANCER_WAND)).rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> ENDER_WAND = ITEMS.register("ender_wand",
             () -> new StaffItem(PropertiesHelper.stackItemProperties(1).attributes(ExtendedSwordItem.createAttributes(WandTier.ENDER_WAND)).rarity(Rarity.UNCOMMON)));
-    public static final DeferredItem<Item> SACRED_WAND = ITEMS.register("sacred_symbol",
+    public static final DeferredItem<Item> SACRED_SYMBOL = ITEMS.register("sacred_symbol",
             () -> new StaffItem(PropertiesHelper.stackItemProperties(1).attributes(ExtendedSwordItem.createAttributes(WandTier.SACRED_SYMBOL)).rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> BLOOD_WAND = ITEMS.register("blood_wand",
             () -> new StaffItem(PropertiesHelper.stackItemProperties(1).attributes(ExtendedSwordItem.createAttributes(WandTier.BLOOD_WAND)).rarity(Rarity.UNCOMMON)));
@@ -160,6 +161,25 @@ public class ModItems {
 //    public static final Supplier<Item> PHANTOM_POTION = ITEMS.register("phantom_potion",
 //            () -> new SimpleElixir(ItemPropertiesHelper.material(), () ->
 //                    new MobEffectInstance(ModEffects.PHANTOM_EFFECT.get(), 900, 0)));
+
+    //Eggs
+//    public static final DeferredItem<SpawnEggItem> RAVEN_SPAWN_EGG = ITEMS.register("raven_spawn_egg", () ->
+//            new DeferredSpawnEggItem(ModEntityType.RAVEN, 0x111111, 0x262626, PropertiesHelper.stackItemProperties(64)));
+//    public static final DeferredItem<SpawnEggItem> UNDEAD_SPIRIT_SPAWN_EGG = ITEMS.register("undead_spirit_spawn_egg", () ->
+//            new DeferredSpawnEggItem(ModEntityType.UNDEAD_SPIRIT, 0x111111, 0x989898, PropertiesHelper.stackItemProperties(64)));
+//    public static final DeferredItem<SpawnEggItem> GHOST_SPAWN_EGG = ITEMS.register("ghost_spawn_egg", () ->
+//            new DeferredSpawnEggItem(ModEntityType.GHOST, 0x585858, 0x787878, PropertiesHelper.stackItemProperties(64)));
+//    public static final DeferredItem<SpawnEggItem> GOBLIN_SHAMAN_SPAWN_EGG = ITEMS.register("goblin_shaman_spawn_egg", () ->
+//            new DeferredSpawnEggItem(ModEntityType.GOBLIN_SHAMAN, 0x224f23, 0x2f6e30, PropertiesHelper.stackItemProperties(64)));
+//    public static final DeferredItem<SpawnEggItem> GOBLIN_WARRIOR_SPAWN_EGG = ITEMS.register("goblin_warrior_spawn_egg", () ->
+//            new DeferredSpawnEggItem(ModEntityType.GOBLIN_WARRIOR, 0x224f23, 0x4e7a4f, PropertiesHelper.stackItemProperties(64)));
+//    public static final DeferredItem<SpawnEggItem> GREEMON_SPAWN_EGG = ITEMS.register("greemon_spawn_egg", () ->
+//            new DeferredSpawnEggItem(ModEntityType.GREEMON, 0x955252, 0x74786c, PropertiesHelper.stackItemProperties(64)));
+//    public static final DeferredItem<SpawnEggItem> GREEN_HAG_SPAWN_EGG = ITEMS.register("green_hag_spawn_egg", () ->
+//            new DeferredSpawnEggItem(ModEntityType.GREEN_HAG, 0x1c4316, 0x25631c, PropertiesHelper.stackItemProperties(64)));
+    public static final DeferredItem<SpawnEggItem> LESHY_SPAWN_EGG = ITEMS.register("leshy_spawn_egg", () ->
+            new DeferredSpawnEggItem(ModEntityType.LESHY, 0x295423, 0x37240d, PropertiesHelper.stackItemProperties(64)));
+
 
 
     public static void register(IEventBus eventBus) {
