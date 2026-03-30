@@ -57,6 +57,9 @@
   "item.dnmmod.component_bag": "Сумка с компонентами",
   "item.dnmmod.medium_component_bag": "Средняя сумка с компонентами",
 
+  "container.component_bag": "Сумка с компонентами",
+  "container.medium_component_bag": "Средняя сумка с компонентами",
+
   "item.dnmmod.raven_spawn_egg": "Яйцо призыва ворона",
   "item.dnmmod.undead_spirit_spawn_egg": "Яйцо призыва Духа Нежити",
   "item.dnmmod.ghost_spawn_egg": "Яйцо призыва призрака",
@@ -75,7 +78,6 @@
   "item.dnmmod.iron_ring": "Железное колечко",
 
   "item.dnmmod.ectoplasm": "Эктоплазма",
-  "item.dnmmod.phantom_potion": "Зелье фантома",
 
   "item.dnmmod.maid_dress": "Платье горничной",
   "item.dnmmod.maid_cap": "Шапочка горничной",
@@ -115,6 +117,10 @@
   "item.minecraft.potion.effect.corpse_poison": "Трупный яд",
   "item.minecraft.splash_potion.effect.corpse_poison": "Взрывной трупный яд",
   "item.minecraft.lingering_potion.effect.corpse_poison": "Оседающий трупный яд",
+
+  "item.minecraft.potion.effect.phantom_potion": "Зелье фантома",
+  "item.minecraft.splash_potion.effect.phantom_potion": "Взрывное зелье фантома",
+  "item.minecraft.lingering_potion.effect.phantom_potion": "Оседающее зелье фантома",
 
   "block.dnmmod.clay_shale": "Глинистый сланец",
   "block.dnmmod.coke_oven": "Коксовая печь",

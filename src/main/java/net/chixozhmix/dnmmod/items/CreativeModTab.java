@@ -48,7 +48,7 @@ public class CreativeModTab {
                         output.accept(ModItems.DIAMOND_TRIDENT.get());
                         output.accept(ModItems.DIAMOND_KATANA.get());
                         output.accept(ModItems.RITUAL_DAGGER.get());
-                        //output.accept(ModItems.BLADESINGER_SWORD.get());
+                        output.accept(ModItems.BLADESINGER_SWORD.get());
                     })
                     .build());
 
@@ -77,7 +77,6 @@ public class CreativeModTab {
                     .title(Component.translatable("creativetab.dnmmod.items"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.ECTOPLASM.get());
-                        //output.accept(ModItems.PHANTOM_POTION.get());
                         output.accept(ModItems.THUNDERSTORM_BOTTLE.get());
                         output.accept(ModItems.RAVEN_FEATHER.get());
                         output.accept(ModItems.GREEMON_FANG.get());
@@ -109,8 +108,8 @@ public class CreativeModTab {
                         output.accept(ModItems.BLADE_RUNE.get());
                         output.accept(ModItems.PROTECTION_RING.get());
 
-                        //output.accept(ModItems.COMPONENT_BAG.get());
-                        //output.accept(ModItems.MEDIUM_COMPONENT_BAG.get());
+                        output.accept(ModItems.COMPONENT_BAG.get());
+                        output.accept(ModItems.MEDIUM_COMPONENT_BAG.get());
                     })
                     .build());
 

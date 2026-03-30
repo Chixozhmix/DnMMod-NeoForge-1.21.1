@@ -1,5 +1,6 @@
 package net.chixozhmix.dnmmod;
 
+import io.redspace.ironsspellbooks.render.SpellBookCurioRenderer;
 import net.chixozhmix.dnmmod.entity.custom.client.UndeadSpiritRenderer;
 import net.chixozhmix.dnmmod.entity.flame_atronach.FlameAtronachrenderer;
 import net.chixozhmix.dnmmod.entity.ghost.GhostRenderer;
@@ -20,6 +21,11 @@ import net.chixozhmix.dnmmod.entity.storm_atronach.StormAtronachRenderer;
 import net.chixozhmix.dnmmod.entity.summoned.client.SummonedRavenModel;
 import net.chixozhmix.dnmmod.entity.summoned.client.SummonedRavenRenderer;
 import net.chixozhmix.dnmmod.registers.ModEntityType;
+import net.chixozhmix.dnmmod.registers.ModItems;
+import net.chixozhmix.dnmmod.registers.ModMenuTypes;
+import net.chixozhmix.dnmmod.renderer.ArmorEffectRenderer;
+import net.chixozhmix.dnmmod.screen.component_bag.ComponentBagScreen;
+import net.chixozhmix.dnmmod.screen.medium_bag.MediumBagScreen;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -28,9 +34,10 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
+import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 @Mod(value = DnMMod.MOD_ID, dist = Dist.CLIENT)
-// You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
 @EventBusSubscriber(modid = DnMMod.MOD_ID, value = Dist.CLIENT)
 public class DnMModClient {
     public DnMModClient(ModContainer container) {
@@ -43,6 +50,12 @@ public class DnMModClient {
 
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
+        event.enqueueWork(() -> {
+            CuriosRendererRegistry.register(ModItems.MAGICAL_GRIMOIRE.get(), SpellBookCurioRenderer::new);
+
+            ArmorEffectRenderer.init();
+        });
+
         EntityRenderers.register(ModEntityType.ICE_DAGGER.get(), IceDaggerRenderer::new);
         EntityRenderers.register(ModEntityType.ACID_PROJECTILE.get(), AcidProjectileRenderer::new);
         EntityRenderers.register(ModEntityType.CHROMATIC_ORB.get(), ChromaticOrbRenderer::new);
@@ -51,7 +64,6 @@ public class DnMModClient {
         EntityRenderers.register(ModEntityType.TALL_THE_DEAD.get(), TallTheDeadRenderer::new);
 
         EntityRenderers.register(ModEntityType.UNDEAD_SPIRIT.get(), UndeadSpiritRenderer::new);
-//        EntityRenderers.register(ModEntityType.SUMMONED_UNDEAD_SPIRIT.get(), SummonedUndeadSpiritRenderer::new);
         EntityRenderers.register(ModEntityType.GOBLIN_SHAMAN.get(), GoblinShamanRenderer::new);
         EntityRenderers.register(ModEntityType.GREEN_HAG.get(), GreenHagRenderer::new);
         EntityRenderers.register(ModEntityType.RAVEN.get(), RavenRenderer::new);
@@ -62,9 +74,6 @@ public class DnMModClient {
         EntityRenderers.register(ModEntityType.GOBLIN_WARRIOR.get(), GoblinWariorRenderer::new);
         EntityRenderers.register(ModEntityType.FLAME_ATRONACH.get(), FlameAtronachrenderer::new);
         EntityRenderers.register(ModEntityType.STORM_ATRONACH.get(), StormAtronachRenderer::new);
-
-//        MenuScreens.register(ModMenuTypes.COMPONENT_BAG_MENU.get(), ComponentBagScreen::new);
-//        MenuScreens.register(ModMenuTypes.MEDIUM_COMPONENT_BAG_MENU.get(), MediumBagScreen::new);
     }
 
     @SubscribeEvent
@@ -75,5 +84,11 @@ public class DnMModClient {
         event.registerLayerDefinition(RavenRenderer.MODEL_LAYER_LOCATION, RavenModel::createBodyLayer);
         event.registerLayerDefinition(SummonedRavenRenderer.MODEL_LAYER_LOCATION, SummonedRavenModel::createBodyLayer);
         event.registerLayerDefinition(RayOfEnfeeblementRenderer.MODEL_LAYER_LOCATION, RayOfEnfeeblementRenderer::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    public static void registerScreens(RegisterMenuScreensEvent event) {
+        event.register(ModMenuTypes.COMPONENT_BAG_MENU.get(), ComponentBagScreen::new);
+        event.register(ModMenuTypes.MEDIUM_COMPONENT_BAG_MENU.get(), MediumBagScreen::new);
     }
 }

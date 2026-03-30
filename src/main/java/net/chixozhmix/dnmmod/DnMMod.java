@@ -1,10 +1,9 @@
 package net.chixozhmix.dnmmod;
 
 import net.chixozhmix.dnmmod.items.CreativeModTab;
-import net.chixozhmix.dnmmod.registers.BlockRegister;
-import net.chixozhmix.dnmmod.registers.ModEntityType;
-import net.chixozhmix.dnmmod.registers.ModItems;
-import net.chixozhmix.dnmmod.registers.RegistrySpells;
+import net.chixozhmix.dnmmod.registers.*;
+import net.minecraft.resources.ResourceLocation;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -37,6 +36,9 @@ public class DnMMod {
         BlockRegister.register(modEventBus);
         RegistrySpells.register(modEventBus);
         ModEntityType.register(modEventBus);
+        ModEffects.register(modEventBus);
+        ModPotions.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -55,5 +57,9 @@ public class DnMMod {
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 
+    }
+
+    public static ResourceLocation id(@NotNull String path) {
+        return ResourceLocation.fromNamespaceAndPath("dnmmod", path);
     }
 }

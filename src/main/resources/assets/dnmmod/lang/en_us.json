@@ -56,6 +56,9 @@
   "item.dnmmod.component_bag": "Component bag",
   "item.dnmmod.medium_component_bag": "Medium component bag",
 
+  "container.component_bag": "Component bag",
+  "container.medium_component_bag": "Medium component bag",
+
   "item.dnmmod.raven_spawn_egg": "Raven spawn egg",
   "item.dnmmod.undead_spirit_spawn_egg": "Undead Spirit spawn egg",
   "item.dnmmod.ghost_spawn_egg": "Ghost spawn egg",
@@ -74,7 +77,6 @@
   "item.dnmmod.iron_ring": "Iron ring",
 
   "item.dnmmod.ectoplasm": "Ectoplasm",
-  "item.dnmmod.phantom_potion": "Phantom potion",
 
   "item.dnmmod.maid_dress": "Maid dress",
   "item.dnmmod.maid_cap": "Maid cap",
@@ -114,6 +116,10 @@
   "item.minecraft.potion.effect.corpse_poison": "Corpse poison",
   "item.minecraft.splash_potion.effect.corpse_poison": "Splash corpse poison",
   "item.minecraft.lingering_potion.effect.corpse_poison": "Lingering corpse poison",
+
+  "item.minecraft.potion.effect.phantom_potion": "Phantom potion",
+  "item.minecraft.splash_potion.effect.phantom_potion": "Splash phantom potion",
+  "item.minecraft.lingering_potion.effect.phantom_potion": "Lingering phantom potion",
 
   "block.dnmmod.leshy_altar": "Leshy Altar",
 

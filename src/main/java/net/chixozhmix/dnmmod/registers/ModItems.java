@@ -2,7 +2,7 @@ package net.chixozhmix.dnmmod.registers;
 
 import io.redspace.ironsspellbooks.api.item.weapons.ExtendedSwordItem;
 import io.redspace.ironsspellbooks.api.registry.AttributeRegistry;
-import io.redspace.ironsspellbooks.api.spells.SpellRarity;
+import io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder;
 import io.redspace.ironsspellbooks.compat.Curios;
 import io.redspace.ironsspellbooks.item.SpellBook;
 import io.redspace.ironsspellbooks.item.curios.CurioBaseItem;
@@ -19,6 +19,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.DeferredSpawnEggItem;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.function.Supplier;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(DnMMod.MOD_ID);
@@ -91,9 +93,9 @@ public class ModItems {
             4, -2.0f, 1030);
     public static final DeferredItem<Item> RITUAL_DAGGER = registerSword("ritual_dagger", Tiers.DIAMOND,
             1, -1.4f, 400);
-//    public static final Supplier<Item> BLADESINGER_SWORD = ITEMS.register("bladesinger_sword", () ->
-//            new BladesingerSword(SpellDataRegistryHolder.of(new SpellDataRegistryHolder[]{
-//                    new SpellDataRegistryHolder(RegistrySpells.THICK_OF_FIGHT, 1)})));
+    public static final Supplier<Item> BLADESINGER_SWORD = ITEMS.register("bladesinger_sword", () ->
+            new BladesingerSword(SpellDataRegistryHolder.of(new SpellDataRegistryHolder[]{
+                    new SpellDataRegistryHolder(RegistrySpells.THICK_OF_FIGHT, 1)})));
     //Staffs and wands
     public static final DeferredItem<Item> WOODEN_WAND = ITEMS.register("wooden_wand",
         () -> new StaffItem(PropertiesHelper.stackItemProperties(1).attributes(ExtendedSwordItem.createAttributes(WandTier.WOODEN_WAND))));
@@ -129,6 +131,11 @@ public class ModItems {
             new Item(new Item.Properties().stacksTo(64)));
     public static final DeferredItem<Item> IRON_RING = ITEMS.register("iron_ring", () ->
             new Item(new Item.Properties().stacksTo(64)));
+
+    public static final DeferredItem<Item> COMPONENT_BAG = ITEMS.register("component_bag",
+            () -> new ComponentBag(PropertiesHelper.itemProperties()));
+    public static final DeferredItem<Item> MEDIUM_COMPONENT_BAG = ITEMS.register("medium_component_bag",
+            () -> new MediumComponentBag(PropertiesHelper.itemProperties()));
     //Magic Item
     public static final DeferredItem<Item> HAG_EYE = ITEMS.register("hag_eye", () ->
             new HagEye(new Item.Properties().stacksTo(1)
@@ -176,10 +183,6 @@ public class ModItems {
     public static final DeferredItem<Item> MAGICAL_GRIMOIRE = ITEMS.register("magical_grimoire",
             () -> (new SpellBook(8)).withSpellbookAttributes(new AttributeContainer[]{new AttributeContainer(AttributeRegistry.COOLDOWN_REDUCTION, 0.05, AttributeModifier.Operation.ADD_MULTIPLIED_BASE),
             new AttributeContainer(AttributeRegistry.MAX_MANA, 50.0F, AttributeModifier.Operation.ADD_VALUE)}));
-    //Potions
-//    public static final Supplier<Item> PHANTOM_POTION = ITEMS.register("phantom_potion",
-//            () -> new SimpleElixir(ItemPropertiesHelper.material(), () ->
-//                    new MobEffectInstance(ModEffects.PHANTOM_EFFECT.get(), 900, 0)));
 
     //Eggs
     public static final DeferredItem<SpawnEggItem> RAVEN_SPAWN_EGG = ITEMS.register("raven_spawn_egg", () ->

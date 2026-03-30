@@ -11,35 +11,37 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib.cache.object.BakedGeoModel;
+import software.bernie.geckolib.renderer.layer.GeoRenderLayer;
 
 public class StormAtronachRenderer extends AbstractSpellCastingMobRenderer {
+    private static final ResourceLocation TEXTURE =
+            ResourceLocation.fromNamespaceAndPath(DnMMod.MOD_ID, "textures/entity/storm_atronach/storm_atronach.png");
     private static final ResourceLocation EMISSIVE_TEXTURE =
             ResourceLocation.fromNamespaceAndPath(DnMMod.MOD_ID, "textures/entity/storm_atronach/lightning.png");
 
     public StormAtronachRenderer(EntityRendererProvider.Context renderManager) {
         super(renderManager, new StormAtronachModel());
+        this.shadowRadius = 0.5f;
+
+        addRenderLayer(new GeoRenderLayer<>(this) {
+            @Override
+            public void render(PoseStack poseStack, AbstractSpellCastingMob animatable, BakedGeoModel model,
+                               RenderType renderType, MultiBufferSource bufferSource, VertexConsumer buffer,
+                               float partialTick, int packedLight, int packedOverlay) {
+                // Получаем эмиссивный вершинный буфер
+                RenderType emissiveRenderType = RenderType.entityTranslucentEmissive(EMISSIVE_TEXTURE);
+                VertexConsumer emissiveBuffer = bufferSource.getBuffer(emissiveRenderType);
+
+                // Вызываем reRender с правильным количеством аргументов
+                getRenderer().reRender(model, poseStack, bufferSource, animatable,
+                        emissiveRenderType, emissiveBuffer, partialTick, packedLight, packedOverlay, 1);
+            }
+        });
     }
 
     @Override
-    public void preRender(PoseStack poseStack, AbstractSpellCastingMob animatable, BakedGeoModel model, @Nullable MultiBufferSource bufferSource, @Nullable VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, int colour) {
-        super.preRender(poseStack, animatable, model, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, colour);
-    }
-
-    @Override
-    public void actuallyRender(PoseStack poseStack, AbstractSpellCastingMob animatable, BakedGeoModel model, @Nullable RenderType renderType, MultiBufferSource bufferSource, @Nullable VertexConsumer buffer, boolean isReRender, float partialTick, int packedLight, int packedOverlay, int colour) {
-        super.actuallyRender(poseStack, animatable, model, renderType, bufferSource, buffer, isReRender, partialTick, packedLight, packedOverlay, colour);
-        // Затем рендерим светящийся слой
-        if (!isReRender) {
-            VertexConsumer emissiveBuffer = bufferSource.getBuffer(RenderType.entityTranslucentEmissive(EMISSIVE_TEXTURE));
-            super.actuallyRender(poseStack, animatable, model, renderType,
-                    bufferSource, buffer, true, partialTick,
-                    15728880, packedOverlay, colour);
-        }
-    }
-
-    @Override
-    public RenderType getRenderType(AbstractSpellCastingMob animatable, ResourceLocation texture, @Nullable MultiBufferSource bufferSource,
-                                    float partialTick) {
-        return RenderType.entityTranslucent(texture);
+    public RenderType getRenderType(AbstractSpellCastingMob animatable, ResourceLocation texture,
+                                    @Nullable MultiBufferSource bufferSource, float partialTick) {
+        return RenderType.entityTranslucent(TEXTURE);
     }
 }

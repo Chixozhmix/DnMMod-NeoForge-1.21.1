@@ -7,6 +7,7 @@ import io.redspace.ironsspellbooks.entity.mobs.IMagicSummon;
 import io.redspace.ironsspellbooks.entity.mobs.abstract_spell_casting_mob.AbstractSpellCastingMob;
 import io.redspace.ironsspellbooks.entity.mobs.goals.*;
 import io.redspace.ironsspellbooks.util.OwnerHelper;
+import net.chixozhmix.dnmmod.registers.ModEffects;
 import net.chixozhmix.dnmmod.registers.ModEntityType;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -241,7 +242,7 @@ public class FlameAtronachEntity extends AbstractSpellCastingMob implements IMag
 
     @Override
     public boolean addEffect(MobEffectInstance pEffectInstance, @Nullable Entity pEntity) {
-        if(pEffectInstance.getEffect() == MobEffects.POISON) //pEffectInstance.getEffect() == ModEffects.CORPSE_POISON.get())
+        if(pEffectInstance.getEffect() == MobEffects.POISON || pEffectInstance.getEffect() == ModEffects.CORPSE_POISON)
             return false;
 
         return super.addEffect(pEffectInstance, pEntity);

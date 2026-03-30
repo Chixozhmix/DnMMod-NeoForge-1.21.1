@@ -14,6 +14,7 @@ import io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.chixozhmix.dnmmod.DnMMod;
 import net.chixozhmix.dnmmod.entity.spell.contagion_ray.ContagionRay;
+import net.chixozhmix.dnmmod.registers.ModEffects;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
@@ -105,7 +106,7 @@ public class ContagionSpell extends AbstractSpell {
                                 getRadius(spellLevel, entity)), target.getX(), target.getBoundingBox().getCenter().y + 0.4, target.getZ(), 1,
                         (double)0.0F, (double)0.0F, (double)0.0F, (double)0.0F, true);
 
-                //target.addEffect(new MobEffectInstance(ModEffects.CORPSE_POISON.get(), this.getDurability(spellLevel, entity)));
+                target.addEffect(new MobEffectInstance(ModEffects.CORPSE_POISON, this.getDurability(spellLevel, entity)));
 
                 SpellDamageSource source = this.getDamageSource(entity);
                 DamageSources.applyDamage(target, this.getDamage(spellLevel, entity), source);

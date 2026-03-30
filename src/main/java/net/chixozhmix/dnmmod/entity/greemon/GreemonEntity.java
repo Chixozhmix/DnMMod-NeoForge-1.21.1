@@ -1,10 +1,12 @@
 package net.chixozhmix.dnmmod.entity.greemon;
 
+import net.chixozhmix.dnmmod.registers.ModEffects;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -70,7 +72,7 @@ public class GreemonEntity extends Monster implements GeoEntity {
 
     @Override
     public boolean addEffect(MobEffectInstance pEffectInstance, @Nullable Entity pEntity) {
-        if(pEffectInstance.getEffect() == MobEffects.POISON )//|| pEffectInstance.getEffect() == ModEffects.CORPSE_POISON.get())
+        if(pEffectInstance.getEffect() == MobEffects.POISON || pEffectInstance.getEffect() == ModEffects.CORPSE_POISON)
             return false;
 
         return super.addEffect(pEffectInstance, pEntity);
@@ -96,12 +98,12 @@ public class GreemonEntity extends Monster implements GeoEntity {
     public boolean doHurtTarget(Entity pEntity) {
         this.swing(InteractionHand.MAIN_HAND);
 
-//        ((LivingEntity) pEntity).addEffect(new MobEffectInstance(ModEffects.CORPSE_POISON.get(),
-//                100,
-//                0,
-//                false,
-//                true,
-//                   true));
+        ((LivingEntity) pEntity).addEffect(new MobEffectInstance(ModEffects.CORPSE_POISON,
+                100,
+                0,
+                false,
+                true,
+                   true));
 
         return super.doHurtTarget(pEntity);
     }

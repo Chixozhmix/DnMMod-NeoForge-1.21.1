@@ -8,10 +8,12 @@ import io.redspace.ironsspellbooks.api.util.AnimationHolder;
 import io.redspace.ironsspellbooks.api.util.Utils;
 import io.redspace.ironsspellbooks.registries.SoundRegistry;
 import net.chixozhmix.dnmmod.DnMMod;
+import net.chixozhmix.dnmmod.registers.ModEffects;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 
@@ -72,11 +74,11 @@ public class AgathysArmorSpell extends AbstractSpell {
     public void onCast(Level level, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
         super.onCast(level, spellLevel, entity, castSource, playerMagicData);
 
-//        entity.addEffect(new MobEffectInstance((MobEffect) ModEffects.AGATHYS_ARMOR.get(),
-//                1300,
-//                (int)this.getSpellPower(spellLevel, entity) - 1,
-//                false,
-//                false,
-//                true));
+        entity.addEffect(new MobEffectInstance(ModEffects.AGATHYS_ARMOR,
+                1300,
+                (int)this.getSpellPower(spellLevel, entity) - 1,
+                false,
+                false,
+                true));
     }
 }

@@ -2,6 +2,7 @@ package net.chixozhmix.dnmmod.events;
 
 
 import net.chixozhmix.dnmmod.DnMMod;
+import net.chixozhmix.dnmmod.effect.custom.ShrinkEffect;
 import net.chixozhmix.dnmmod.entity.custom.UndeadSpiritEntity;
 import net.chixozhmix.dnmmod.entity.flame_atronach.FlameAtronachEntity;
 import net.chixozhmix.dnmmod.entity.ghost.GhostEntity;
@@ -13,15 +14,23 @@ import net.chixozhmix.dnmmod.entity.leshy.LeshyEntity;
 import net.chixozhmix.dnmmod.entity.raven.RavenEntity;
 import net.chixozhmix.dnmmod.entity.storm_atronach.StormAtronach;
 import net.chixozhmix.dnmmod.entity.summoned.SummonedRavenEntity;
+import net.chixozhmix.dnmmod.registers.ModEffects;
 import net.chixozhmix.dnmmod.registers.ModEntityType;
+import net.chixozhmix.dnmmod.registers.ModItems;
+import net.chixozhmix.dnmmod.registers.ModPotions;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.event.brewing.RegisterBrewingRecipesEvent;
 import net.neoforged.neoforge.event.entity.EntityAttributeCreationEvent;
 import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+import net.neoforged.neoforge.event.tick.EntityTickEvent;
 
 @Mod(value = DnMMod.MOD_ID)
 @EventBusSubscriber(modid = DnMMod.MOD_ID)
@@ -30,7 +39,6 @@ public class ModEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(ModEntityType.UNDEAD_SPIRIT.get(), UndeadSpiritEntity.createAttributes());
-//        event.put(ModEntityType.SUMMONED_UNDEAD_SPIRIT.get(), SummonedUndeadSpirit.createAttributes());
         event.put(ModEntityType.GOBLIN_SHAMAN.get(), GoblinShamanEntity.prepareAttributes().build());
         event.put(ModEntityType.GREEN_HAG.get(), GreenHagEntity.prepareAttributes().build());
         event.put(ModEntityType.RAVEN.get(), RavenEntity.createAttributes());
@@ -53,5 +61,26 @@ public class ModEvents {
                 Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
         event.register(ModEntityType.GHOST.get(), SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                 Monster::checkMonsterSpawnRules, RegisterSpawnPlacementsEvent.Operation.REPLACE);
+    }
+
+    @SubscribeEvent
+    public static void onEntityTick(EntityTickEvent.Post event) {
+        if (event.getEntity() instanceof LivingEntity living && !living.level().isClientSide()) {
+            boolean hasEffect = living.hasEffect(ModEffects.SHRINK_EFFECT);
+            boolean hadEffect = living.getPersistentData().getBoolean("ShrinkEffectHadEffect");
+
+            // Если эффект был, но сейчас его нет - восстанавливаем размер
+            if (hadEffect && !hasEffect) {
+                ShrinkEffect.restoreScale(living);
+            }
+        }
+    }
+
+    @SubscribeEvent
+    public static void BrewingRecipeRegister(RegisterBrewingRecipesEvent event) {
+        PotionBrewing.Builder builder = event.getBuilder();
+
+        builder.addMix(Potions.POISON, ModItems.GREEMON_FANG.get(), ModPotions.CORPSE_POISON);
+        builder.addMix(Potions.AWKWARD, ModItems.ECTOPLASM.get(), ModPotions.PHANTOM_POTION);
     }
 }
