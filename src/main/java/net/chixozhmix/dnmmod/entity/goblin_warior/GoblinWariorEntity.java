@@ -2,10 +2,13 @@ package net.chixozhmix.dnmmod.entity.goblin_warior;
 
 import io.redspace.ironsspellbooks.api.util.Utils;
 import net.chixozhmix.dnmmod.registers.ModItems;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -154,13 +157,13 @@ public class GoblinWariorEntity extends Monster implements GeoEntity {
         return true;
     }
 
-//    @Override
-//    protected @Nullable SoundEvent getAmbientSound() {
-//        return SoundsRegistry.GOBLIN_AMBIENT.get();
-//    }
-//
-//    @Override
-//    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-//        return SoundsRegistry.GOBLIN_HURT.get();
-//    }
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return SoundsRegistry.GOBLIN_AMBIENT.get();
+    }
+
+    @Override
+    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
+        return SoundsRegistry.GOBLIN_HURT.get();
+    }
 }

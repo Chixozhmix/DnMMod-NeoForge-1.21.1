@@ -1,6 +1,8 @@
 package net.chixozhmix.dnmmod.entity.custom;
 
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.core.BlockPos;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -17,6 +19,8 @@ import software.bernie.geckolib.animatable.GeoEntity;
 import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.util.GeckoLibUtil;
+
+import javax.annotation.Nullable;
 
 public class UndeadSpiritEntity extends Monster implements GeoEntity {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -136,10 +140,10 @@ public class UndeadSpiritEntity extends Monster implements GeoEntity {
         return this.level().getBrightness(LightLayer.SKY, this.blockPosition()) / 15.0F;
     }
 
-//    @Override
-//    protected @Nullable SoundEvent getAmbientSound() {
-//        return SoundsRegistry.UNDEAD_SPIRIT.get();
-//    }
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return SoundsRegistry.UNDEAD_SPIRIT.get();
+    }
 
     @Override
     protected boolean shouldDespawnInPeaceful() {

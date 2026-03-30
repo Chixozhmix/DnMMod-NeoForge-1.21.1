@@ -24,8 +24,8 @@ public class PhantomEffect extends MobEffect {
     @Override
     public boolean applyEffectTick(LivingEntity livingEntity, int amplifier) {
         if (livingEntity instanceof Player player) {
-            // Применяем эффект только если он активен
-            if (player.hasEffect(ModEffects.PHANTOM_EFFECT)) {
+            // Применяем эффект только если он активен И игрок не в режиме спектатора
+            if (player.hasEffect(ModEffects.PHANTOM_EFFECT) && !player.isSpectator()) {
                 player.getAbilities().mayfly = true;
                 player.getAbilities().flying = true;
                 player.onUpdateAbilities();
@@ -41,6 +41,11 @@ public class PhantomEffect extends MobEffect {
     }
 
     private void preventBedrockPassing(Player player) {
+        // Не применяем если игрок в спектаторе
+        if (player.isSpectator()) {
+            return;
+        }
+
         Level level = player.level();
         AABB playerBounds = player.getBoundingBox();
 
@@ -57,6 +62,11 @@ public class PhantomEffect extends MobEffect {
     }
 
     private void pushPlayerOutOfBlock(Player player, BlockPos blockPos, BlockState blockState) {
+        // Не применяем если игрок в спектаторе
+        if (player.isSpectator()) {
+            return;
+        }
+
         AABB blockBounds = blockState.getShape(player.level(), blockPos).bounds().move(blockPos);
         AABB playerBounds = player.getBoundingBox();
 
@@ -133,16 +143,19 @@ public class PhantomEffect extends MobEffect {
 
             // Если эффекта нет, но игрок всё ещё имеет способности от эффекта - сбрасываем
             if (effect == null || effect.getEffect() == null) {
-                if (player.getAbilities().mayfly && !player.isCreative() && !player.isSpectator()) {
-                    resetPlayerPhysics(player);
-                }
-                if (player.noPhysics || player.isNoGravity()) {
+                if ((player.getAbilities().mayfly && !player.isCreative() && !player.isSpectator()) ||
+                        player.noPhysics || player.isNoGravity()) {
                     resetPlayerPhysics(player);
                 }
             }
         }
 
         private static void resetPlayerPhysics(Player player) {
+            // Не сбрасываем физику если игрок в спектаторе
+            if (player.isSpectator()) {
+                return;
+            }
+
             // Сохраняем информацию о том, был ли игрок в творческом режиме до этого
             boolean wasFlying = player.getAbilities().flying;
 

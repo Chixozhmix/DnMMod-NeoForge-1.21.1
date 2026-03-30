@@ -10,9 +10,11 @@ import io.redspace.ironsspellbooks.damage.DamageSources;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.chixozhmix.dnmmod.DnMMod;
 import net.chixozhmix.dnmmod.entity.spell.ray_of_enfeeblement.RayOfEnfeeblement;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -22,6 +24,7 @@ import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 
 import java.util.List;
+import java.util.Optional;
 
 public class RayOfEnfeeblementSpell extends AbstractSpell {
     private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(DnMMod.MOD_ID, "ray_of_enfeeblement");
@@ -56,10 +59,10 @@ public class RayOfEnfeeblementSpell extends AbstractSpell {
         return CastType.INSTANT;
     }
 
-//    @Override
-//    public Optional<SoundEvent> getCastFinishSound() {
-//        return Optional.of((SoundEvent) SoundsRegistry.NECRO_MAGIC.get());
-//    }
+    @Override
+    public Optional<SoundEvent> getCastFinishSound() {
+        return Optional.of(SoundsRegistry.NECRO_MAGIC.value());
+    }
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {

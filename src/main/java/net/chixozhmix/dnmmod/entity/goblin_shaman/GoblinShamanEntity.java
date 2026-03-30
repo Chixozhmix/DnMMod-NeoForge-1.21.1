@@ -8,8 +8,10 @@ import io.redspace.ironsspellbooks.entity.mobs.abstract_spell_casting_mob.Abstra
 import io.redspace.ironsspellbooks.entity.mobs.goals.WizardAttackGoal;
 import io.redspace.ironsspellbooks.entity.mobs.goals.WizardRecoverGoal;
 import io.redspace.ironsspellbooks.registries.ItemRegistry;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
@@ -102,13 +104,13 @@ public class GoblinShamanEntity extends AbstractSpellCastingMob implements Enemy
         this.spawnAtLocation(new ItemStack(ItemRegistry.ARCANE_ESSENCE.get(), randomSource.nextInt(8)));
     }
 
-//    @Override
-//    protected @Nullable SoundEvent getAmbientSound() {
-//        return SoundsRegistry.GOBLIN_AMBIENT.get();
-//    }
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return SoundsRegistry.GOBLIN_AMBIENT.get();
+    }
 
-//    @Override
-//    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-//        return SoundsRegistry.GOBLIN_HURT.get();
-//    }
+    @Override
+    protected SoundEvent getHurtSound(DamageSource pDamageSource) {
+        return SoundsRegistry.GOBLIN_HURT.get();
+    }
 }

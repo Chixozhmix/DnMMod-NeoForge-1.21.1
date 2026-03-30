@@ -7,10 +7,12 @@ import io.redspace.ironsspellbooks.registries.ItemRegistry;
 import net.chixozhmix.dnmmod.goals.MeleeCasterAtackGoal;
 import net.chixozhmix.dnmmod.registers.ModItems;
 import net.chixozhmix.dnmmod.registers.RegistrySpells;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.DifficultyInstance;
@@ -133,10 +135,10 @@ public class LeshyEntity extends AbstractSpellCastingMob implements Enemy {
         return false;
     }
 
-//    @Override
-//    protected @Nullable SoundEvent getAmbientSound() {
-//        return SoundsRegistry.LESHY_AMBIENT.get();
-//    }
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return SoundsRegistry.LESHY_AMBIENT.get();
+    }
 
     /* BOSS BAR */
 

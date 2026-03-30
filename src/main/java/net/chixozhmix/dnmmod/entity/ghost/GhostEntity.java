@@ -1,9 +1,11 @@
 package net.chixozhmix.dnmmod.entity.ghost;
 
 import net.chixozhmix.dnmmod.registers.ModItems;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
@@ -33,6 +35,7 @@ import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.animation.*;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
+import javax.annotation.Nullable;
 import java.util.EnumSet;
 
 public class GhostEntity extends Monster implements GeoEntity {
@@ -273,10 +276,10 @@ public class GhostEntity extends Monster implements GeoEntity {
         return true;
     }
 
-//    @Override
-//    protected @Nullable SoundEvent getAmbientSound() {
-//        return SoundsRegistry.GHOST_AMBIENT.get();
-//    }
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return SoundsRegistry.GHOST_AMBIENT.get();
+    }
 
     @Override
     protected float getSoundVolume() {

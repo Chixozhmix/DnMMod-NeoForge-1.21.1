@@ -1,6 +1,8 @@
 package net.chixozhmix.dnmmod.entity.greemon;
 
 import net.chixozhmix.dnmmod.registers.ModEffects;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -121,10 +123,10 @@ public class GreemonEntity extends Monster implements GeoEntity {
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, AbstractGolem.class, true));
     }
 
-//    @Override
-//    protected @Nullable SoundEvent getAmbientSound() {
-//        return SoundsRegistry.GREEMON_AMBIENT.get();
-//    }
+    @Override
+    protected @Nullable SoundEvent getAmbientSound() {
+        return SoundsRegistry.GREEMON_AMBIENT.get();
+    }
 
     @Override
     protected boolean shouldDespawnInPeaceful() {

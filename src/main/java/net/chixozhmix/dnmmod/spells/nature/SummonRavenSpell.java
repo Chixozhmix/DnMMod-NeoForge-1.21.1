@@ -10,11 +10,13 @@ import net.chixozhmix.dnmmod.DnMMod;
 import net.chixozhmix.dnmmod.Util.SpellUtils;
 import net.chixozhmix.dnmmod.entity.summoned.SummonedRavenEntity;
 import net.chixozhmix.dnmmod.registers.ModItems;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobSpawnType;
@@ -24,6 +26,7 @@ import net.minecraft.world.phys.Vec3;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Optional;
 
 public class SummonRavenSpell extends AbstractSpell {
 
@@ -60,10 +63,10 @@ public class SummonRavenSpell extends AbstractSpell {
         return CastType.LONG;
     }
 
-//    @Override
-//    public Optional<SoundEvent> getCastFinishSound() {
-//        return Optional.of(SoundsRegistry.SUMMON_RAVEN.get());
-//    }
+    @Override
+    public Optional<SoundEvent> getCastFinishSound() {
+        return Optional.of(SoundsRegistry.SUMMON_RAVEN.get());
+    }
 
     @Override
     public List<MutableComponent> getUniqueInfo(int spellLevel, LivingEntity caster) {

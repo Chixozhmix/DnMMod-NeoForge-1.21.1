@@ -13,16 +13,20 @@ import io.redspace.ironsspellbooks.damage.SpellDamageSource;
 import io.redspace.ironsspellbooks.particle.BlastwaveParticleOptions;
 import io.redspace.ironsspellbooks.util.ParticleHelper;
 import net.chixozhmix.dnmmod.DnMMod;
+import net.chixozhmix.dnmmod.api.registers.DnMSchools;
 import net.chixozhmix.dnmmod.entity.spell.tall_the_dead.tallTheDead;
+import net.chixozhmix.dnmmod.registers.SoundsRegistry;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
+import java.util.Optional;
 
 public class TallTheDead extends AbstractSpell {
     private final ResourceLocation spellId = ResourceLocation.fromNamespaceAndPath(DnMMod.MOD_ID, "tall_the_dead");
@@ -38,7 +42,7 @@ public class TallTheDead extends AbstractSpell {
     private DefaultConfig defaultConfig = new DefaultConfig()
             .setMinRarity(SpellRarity.COMMON)
             .setMaxLevel(10)
-            .setSchoolResource(SchoolRegistry.BLOOD_RESOURCE)
+            .setSchoolResource(DnMSchools.NECRO_RESOURCE)
             .setCooldownSeconds(20)
             .build();
 
@@ -57,10 +61,15 @@ public class TallTheDead extends AbstractSpell {
         return CastType.LONG;
     }
 
-//    @Override
-//    public Optional<SoundEvent> getCastFinishSound() {
-//        return Optional.of(SoundsRegistry.TALL_THE_DEAD.get());
-//    }
+    @Override
+    public SchoolType getSchoolType() {
+        return DnMSchools.NECRO.get();
+    }
+
+    @Override
+    public Optional<SoundEvent> getCastFinishSound() {
+        return Optional.of(SoundsRegistry.TALL_THE_DEAD.get());
+    }
 
     @Override
     public AnimationHolder getCastStartAnimation() {

@@ -1,0 +1,58 @@
+{
+  "ghost_ambient": {
+    "subtitle": "sounds.dnmmod.ghost_ambient",
+    "sounds": [
+      "dnmmod:ghost_ambient"
+    ]
+  },
+    "undead_spirit": {
+      "subtitle": "sounds.dnmmod.undead_spirit",
+      "sounds": [
+        "dnmmod:undead_spirit"
+      ]
+    },
+  "summon_raven": {
+    "sounds": [
+      "dnmmod:summon_raven"
+    ]
+  },
+  "raven_ambient": {
+    "subtitle": "sounds.dnmmod.raven",
+    "sounds": [
+      "dnmmod:raven_ambient"
+    ]
+  },
+  "goblin_ambient": {
+    "subtitle": "sounds.dnmmod.goblin",
+    "sounds": [
+      "dnmmod:goblin_ambient"
+    ]
+  },
+  "goblin_hurt": {
+    "sounds": [
+      "dnmmod:goblin_hurt"
+    ]
+  },
+  "greemon_ambient": {
+    "subtitle": "sounds.dnmmod.greemon",
+    "sounds": [
+      "dnmmod:greemon_ambient"
+    ]
+  },
+  "leshy_ambient": {
+    "subtitle": "sounds.dnmmod.leshy",
+    "sounds": [
+      "dnmmod:leshy_ambient"
+    ]
+  },
+  "necro_magic": {
+    "sounds": [
+      "dnmmod:necro_magic"
+    ]
+  },
+  "tall_the_dead": {
+    "sounds": [
+      "dnmmod:tall_the_dead"
+    ]
+  }
+}

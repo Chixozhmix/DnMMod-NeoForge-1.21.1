@@ -10,7 +10,8 @@
     }
   ],
   "result": {
-    "item": "dnmmod:d20"
+    "count": 1,
+    "id": "dnmmod:d20"
   },
   "show_notification": true
 }

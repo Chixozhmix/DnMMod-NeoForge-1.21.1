@@ -22,7 +22,8 @@
                 "max": 1.0,
                 "min": 0.0
               },
-              "function": "minecraft:looting_enchant"
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "irons_spellbooks:arcane_essence"
@@ -51,7 +52,8 @@
                 "max": 1.0,
                 "min": 0.0
               },
-              "function": "minecraft:looting_enchant"
+              "function": "minecraft:enchanted_count_increase",
+              "enchantment": "minecraft:looting"
             }
           ],
           "name": "irons_spellbooks:arcane_essence"
@@ -72,7 +74,9 @@
                 "min": 0.25,
                 "max": 0.85
               },
-              "school": "irons_spellbooks:nature"
+              "spell_filter": {
+                "school": "irons_spellbooks:nature"
+              }
             },
             {
               "function": "irons_spellbooks:randomize_spell",
@@ -80,7 +84,9 @@
                 "min": 0.25,
                 "max": 0.85
               },
-              "school": "irons_spellbooks:blood"
+              "spell_filter": {
+                "school": "irons_spellbooks:blood"
+              }
             }
           ]
         }
@@ -95,7 +101,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "irons_spellbooks:magic_items/great_ink"
+          "value": "irons_spellbooks:magic_items/great_ink"
         }
       ]
     }

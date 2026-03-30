@@ -1,5 +1,7 @@
 package net.chixozhmix.dnmmod;
 
+import net.chixozhmix.dnmmod.api.registers.DnMAttributes;
+import net.chixozhmix.dnmmod.api.registers.DnMSchools;
 import net.chixozhmix.dnmmod.items.CreativeModTab;
 import net.chixozhmix.dnmmod.registers.*;
 import net.minecraft.resources.ResourceLocation;
@@ -30,6 +32,8 @@ public class DnMMod {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
 
+        //modEventBus.addListener(DnMSchools::registerRegistry);
+
         CreativeModTab.register(modEventBus);
 
         ModItems.register(modEventBus);
@@ -39,6 +43,9 @@ public class DnMMod {
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        SoundsRegistry.register(modEventBus);
+        DnMAttributes.ATTRIBUTES.register(modEventBus);
+        DnMSchools.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
